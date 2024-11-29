@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/kitsch/kits-index.css' %}" />
+{% endblock %}
+{% block content %}
+
+
+<section class="page-header">
+  <h1>kit List</h1>
+  <img src="{% static 'images/cool-kit.svg' %}" alt="A cool kit" />
+  <img src="{% static 'images/happy-kit.svg' %}" alt="A happy kit" />
+  <img src="{% static 'images/teacup-kit.svg' %}" alt="A kit in a teacup" />
+  <img src="{% static 'images/kit-in-box.svg' %}" alt="A kit in a box" />
+</section>
+
+
+<section class="card-container">
+  {% for kit in kits %}
+  <div class="card">
+    <div class="card-content">
+      <div class="card-img-container">
+        <img src="{% static 'images/sk8r-boi-kit.svg' %}" alt="A skater boy kit" />
+      </div>
+      <h2 class="card-title">{{ kit.name }}</h2>
+      {% if kit.age > 0 %}
+      <p>A {{ kit.age }} year old {{ kit.breed }}</p>
+      {% else %}
+      <p>A {{ kit.breed }} kitten.</p>
+      {% endif %}
+      <p><small>{{ kit.description }}</small></p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+
+{% endblock %}
