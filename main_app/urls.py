@@ -5,5 +5,5 @@ from . import views # Import views to connect routes to view functions
 urlpatterns = [
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
-    
+    path('kitsch/', views.kit_index, name='kitsch-index'),
 ]
