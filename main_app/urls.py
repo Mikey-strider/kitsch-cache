@@ -1,9 +1,8 @@
 from django.urls import path
-
 from . import views # Import views to connect routes to view functions
 
 urlpatterns = [
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
-    path('kitsch/', views.kit_index, name='kitsch-index'),
+    path('kitsch/', views.kitsch_index, name='kitsch-index'),
 ]

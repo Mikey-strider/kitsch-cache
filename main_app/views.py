@@ -2,9 +2,14 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-class Kits:
+class Kitsch:
     def __init__(self, name):
-        self.name = name,
+        self.name = name
+
+kitsch = [
+    Kitsch('mission'),
+    Kitsch('aboutme')
+]
 
 # Define the home view function
 def home(request):
