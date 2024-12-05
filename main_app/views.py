@@ -1,14 +1,24 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
-class Kitsch:
+class Mission:
     def __init__(self, name):
         self.name = name
 
-kitsch = [
-    Kitsch('mission'),
-    Kitsch('aboutme')
+mission = [
+    Mission('mission1'),
+    Mission('aboutme')
+]
+
+class Love:
+    def __init__(self, name, phone_number, email):
+        self.name = name,
+        self.phone_number = phone_number,
+        self.email = email,
+
+love = [
+    Love('Mikey', '5555555555', 'blahblah@blah.com'),
+    Love('Joseph', '9999999999', 'mablah@blah.com')
 ]
 
 # Define the home view function
@@ -19,5 +29,14 @@ def home(request):
 def about(request):
     return render(request, 'about.html')
 
-def kitsch_index(request):
-    return render(request, 'kitsch/index.html', {'kitsch' : kitsch})
+def mission_index(request):
+    return render(request, 'kitsch/index.html', {'mission' : mission})
+
+def love(request):
+    return render(request, 'kitsch/love.html', {'love' : love})
+
+def contact(request):
+    return render(request, 'kitsch/contact.html', {'contact' : contact})
+
+def people(request):
+    return render(request, 'kitsch/people.html', {'people' : people})
