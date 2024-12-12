@@ -4,19 +4,32 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   height: 100%;
-  background-color: bisque;
+  background-color: #e4dbff94;
+  background-size:inherit;
 }
 
 
 main > section {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   padding: 10px 8px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  text-decoration: underline;
 }
-
 
 .header-logo-container {
   display: none;

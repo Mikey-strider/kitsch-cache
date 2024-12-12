@@ -49,6 +49,7 @@ body {
   --font-reg: 1.6rem;
   --card-border-radius: 6px;
   background-image: url("../images/kitsch\ sunset.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -75,10 +76,6 @@ ul {
 main {
   width: 100%;
   padding: 0 10px;
-}
-
-section{
-  color: beige;
 }
 
 h2 {
