@@ -4,35 +4,43 @@
 <link rel="stylesheet" href="{% static 'css/kitsch/kits-index.css' %}" />
 {% endblock %}
 {% block content %}
+<h1>Mission Statement:</h1>
+<hr />
+<p class="page-content" style="background-color: #e4dbff94;">
+  At Kitsch Cache Licensing Collective, our goal is to bring together licensing partnerships with the following key ideals:
 
+Ethics > money
+American Culture includes many unique characters, artists, art forms and brands with loyal fan followings. The fans deserve the highest quality merchandise.
+There are numerous ways of reaching niche markets: web stores, gift stores, comic book stores, regional specialized chains and more. The key is understanding the customer and their shopping habits.
+Licensed merchandise is an important element in the creation of culture, through stories in a variety of mediums, art, music. Some of this is mainstream, but much of this is not.
+Honesty is the foundation of long term relationships.
+Teamwork. Real teamwork. We formed our collective so that we could build our dream team.
+</p>
+<hr />
 
-<section class="page-header">
-  <h1>kit List</h1>
-  <img src="{% static 'images/cool-kit.svg' %}" alt="A cool kit" />
-  <img src="{% static 'images/happy-kit.svg' %}" alt="A happy kit" />
-  <img src="{% static 'images/teacup-kit.svg' %}" alt="A kit in a teacup" />
-  <img src="{% static 'images/kit-in-box.svg' %}" alt="A kit in a box" />
-</section>
-
-
-<section class="card-container">
-  {% for kit in kits %}
-  <div class="card">
-    <div class="card-content">
-      <div class="card-img-container">
-        <img src="{% static 'images/sk8r-boi-kit.svg' %}" alt="A skater boy kit" />
-      </div>
-      <h2 class="card-title">{{ kit.name }}</h2>
-      {% if kit.age > 0 %}
-      <p>A {{ kit.age }} year old {{ kit.breed }}</p>
-      {% else %}
-      <p>A {{ kit.breed }} kitten.</p>
-      {% endif %}
-      <p><small>{{ kit.description }}</small></p>
-    </div>
-  </div>
-  {% endfor %}
-</section>
+<form action="" style="background-color: #e4dbff94;">
+  <label for="comment">Comment</label>
+  <br>
+  <textarea name="comment" id="comment-form"></textarea>
+  <br>
+  <label for="name">Name:</label>
+  <br>
+  <input type="text" name="name" id="name-form">
+  <br>
+  <label for="email">Email:</label>
+  <br>
+  <input type="email" name="email" id="email-form">
+  <br>
+  <label for="website">Website:</label>
+  <br>
+  <input type="text" name="website" id="website-form">
+  <br>
+  <input type="checkbox" name="save" id="save-form">
+  <br>
+  <label for="save">Save my name, email and website for my next comment.</label>
+  <br>
+  <input type="submit" value="submit">
+</form>
 
 
 {% endblock %}

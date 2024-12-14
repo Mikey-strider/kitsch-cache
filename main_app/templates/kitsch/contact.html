@@ -1,9 +1,29 @@
 {% extends 'base.html' %} 
 {% block content %}
-<h1>About Kitsch-cache</h1>
+<h1>Contact Us:</h1>
 <hr />
-<p class="page-content">
-  I like long romantic walks down the produce aisle. Also, I am currently job
-  seeking!
+<p class="page-content" style="background-color: #e4dbff94;">
+
 </p>
+<hr />
+
+<form action="" style="background-color: #e4dbff94;">
+  <label for="name">Name:</label>
+  <br>
+  <input type="text" name="name" id="name-form">
+  <br>
+  <label for="email">Email:</label>
+  <br>
+  <input type="email" name="email" id="email-form">
+  <br>
+  <label for="website">Website:</label>
+  <br>
+  <input type="text" name="website" id="website-form">
+  <br>
+  <label for="message">Send us a Message</label>
+  <br>
+  <textarea name="message" id="message-form"></textarea>
+  <br>
+  <input type="submit" value="submit">
+</form>
 {% endblock %}
