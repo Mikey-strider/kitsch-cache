@@ -7,5 +7,5 @@ urlpatterns = [
     path('mission/', views.mission_index, name='mission-index'),
     path('love/', views.love, name='love'),
     path('contact/',views.contact, name='contact'),
-    path('people/', views.people, name='people'),
+    path('blog/', views.blog, name='blog'),
 ]

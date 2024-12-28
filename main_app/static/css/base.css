@@ -69,6 +69,7 @@ nav {
 ul {
   margin: 0;
   list-style: none;
+  text-indent: 30px;
   padding: 0;
 }
 

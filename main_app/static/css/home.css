@@ -4,8 +4,8 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   height: 100%;
-  background-color: #e4dbff94;
-  background-size:inherit;
+  /* background-color: #e4dbff94; */
+  /* background-size: inherit; */
 }
 
 

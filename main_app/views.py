@@ -38,5 +38,5 @@ def love(request):
 def contact(request):
     return render(request, 'kitsch/contact.html', {'contact' : contact})
 
-def people(request):
-    return render(request, 'kitsch/people.html', {'people' : people})
+def blog(request):
+    return render(request, 'kitsch/blog.html', {'blog' : blog})
