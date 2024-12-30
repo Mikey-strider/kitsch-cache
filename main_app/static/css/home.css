@@ -31,6 +31,10 @@ h2{
   text-decoration: underline;
 }
 
+p {
+  size: 400px;
+}
+
 .header-logo-container {
   display: none;
 }
@@ -40,11 +44,60 @@ h2{
   max-width: 375px;
 }
 
+#sfatnight {
+  max-width: 1450px;
 
-.cat-container {
-  width: 80%;
 }
 
+/* .header-img {
+  height: auto;
+} */
+
+.msging-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.about-paragraph {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+#tab-brand {
+  max-width: 800px;
+}
+
+.brnding-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#brand-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#fifth-sun {
+  max-width: 800px;
+}
+
+#ripple {
+  max-width: 800px;
+}
+
+#goody-two {
+  max-width: 800px;
+}
+
+#buffalo {
+  max-width: 800px;
+}
 
 .login {
   display: flex;

@@ -9,19 +9,19 @@
 
 <section class="logo-container">
   <div class="kitsch-container">
-    <img src="{% static 'images/splash.svg' %}" alt="" />
+    <!-- <img src="{% static 'images/splash.svg' %}" alt="" /> -->
   </div>
   <!-- <img src="{% static 'images/logotype.svg' %}" alt="Kitsch-Cache logo" /> -->
 </section>
-<div class="header-container">
-  <div>
-    <img src="{% static 'images/sfatnight.png' %}" alt="Picture of golden gate bridge at night" style="background-size: 80px 150px;">
+<div class="header-container" id="main-div">
+  <div id="header-img">
+    <img src="{% static 'images/sfatnight.png' %}" id="sfatnight" alt="Picture of golden gate bridge at night">
   </div>
 </div>
-<div class="msging-container" style="background-color: #e4dbff94;">
+<div class="msging-container" id="msg-container" style="background-color: #e4dbff94;">
   <div>
     <h2>Who we are!</h2>
-    <img src="{% static 'images/tab-brand.jpg' %}" alt="" class="brand-one">
+    <img src="{% static 'images/tab-brand.jpg' %}" id="tab-brand" alt="" class="brand-one">
     <h3>About Us</h3>
     <p class="about-paragraph">
       Kitsch Cache Licensing Collective represents unique, culturally relevant licensed properties, 
@@ -29,13 +29,20 @@
       Our services include business development, marketing, product development, agreement negotiation, 
       strategy and competitive analysis.
     </p>
-    <p class="messaging-paragraph"></p>
-    <img src="" alt="" class="brand-two">
   </div>
-</div>
-<div class="brnding-container" style="background-color: #e4dbff94;">
-  <div>
-    <h2>Some of our Brands</h2>
+  <div class="brnding-container" id="some-brand" style="background-color: #e4dbff94;">
+    <img src="" alt="" class="brand-two">
+    <div id="brand-image">
+      <h2>Some of our Brands</h2>
+      <img src="{% static 'images/fifth-sun-logo_295x@2x.png' %}" id="fifth-sun" alt="fifth sun logo">
+      <hr />
+      <img src="{% static 'images/ripple junction.png' %}" id="ripple" alt="ripple junction logo">
+      <hr />
+      <img src="{% static 'images/goody-two-shoes.png'%}" id="goody-two" alt="goody two shoes logo">
+      <hr />
+      <img src="{% static 'images/buffalo.png'%}" id="buffalo" alt="buffalo logo">
+      <hr />
+    </div>
   </div>
 </div>
 
