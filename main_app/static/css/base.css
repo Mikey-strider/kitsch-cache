@@ -35,7 +35,7 @@ body {
   --nav-bg-ff: rgba(56, 227, 246, 0.9);
   --borders: rgba(100, 43, 255, 0.443) solid 2px;
   --text-color: rgb(17, 20, 17);
-  --link-hover-color: rgb(53, 69, 150);
+  --link-hover-color: rgb(45, 34, 255);
   --button-bg: rgb(245, 245, 245);
   --button-bg-hover: rgb(226, 226, 226);
   --submit: rgb(42, 187, 6);
@@ -49,9 +49,14 @@ body {
   --font-l: 1.8rem;
   --font-reg: 1.6rem;
   --card-border-radius: 6px;
-  background-image: url("../images/kitsch\ sunset.jpg");
+  /* background-image: url("../images/kitsch\ sunset.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: rgb(22, 0, 47);
+}
+
+h1 {
+  color: rgb(247, 156, 255);
 }
 
 
@@ -289,7 +294,7 @@ nav li {
 
 
   nav {
-    margin-left: auto;
+    margin: auto;
   }
 
 
