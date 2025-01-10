@@ -29,7 +29,7 @@ h2{
   align-items: center;
   justify-content: center;
   text-decoration: underline;
-  color: rgb(29, 23, 46);
+  color: rgb(16, 13, 27);
 }
 
 p {
@@ -78,12 +78,11 @@ p {
 }
 
 .brnding-container {
-  display: grid;
+  display: contents;
   grid-template-columns: 1fr;
   gap: 15px;
   grid-template-rows: 1fr;
 }
-
 
 #brand-image{
   display: flex;
@@ -93,18 +92,22 @@ p {
 }
 
 #fifth-sun {
+  order: 3;
   max-width: 800px;
 }
 
 #ripple {
+  order: 4;
   max-width: 800px;
 }
 
 #goody-two {
+  order: 2;
   max-width: 800px;
 }
 
 #buffalo {
+  order: 1;
   max-width: 800px;
 }
 
@@ -153,6 +156,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 800px;
 }
 
 footer h2{

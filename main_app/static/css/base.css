@@ -50,9 +50,6 @@ body {
   --font-reg: 1.6rem;
   --card-border-radius: 6px;
   background-image: linear-gradient(rgb(21, 0, 47), rgb(132, 0, 110), rgb(255, 176, 145));
-  /* background-repeat: no-repeat;
-  background-size: cover; */
-  /* background-color: rgb(22, 0, 47); */
 }
 
 h1 {
@@ -129,6 +126,12 @@ nav li {
   margin: 20px;
 }
 
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-direction: column;
+}
 
 .btn {
   font-size: var(--font-l);
@@ -195,7 +198,6 @@ nav li {
   font-size: var(--font-reg);
 }
 
-
 @media only screen and (min-width: 768px) {
   header {
     position: sticky;
@@ -226,7 +228,7 @@ nav li {
 
 
   nav {
-    margin-left: auto;
+    margin: auto;
     display: flex;
     justify-content: center;
   }
@@ -296,15 +298,6 @@ nav li {
   nav {
     margin: auto;
   }
-
-
-  .header-logo-container {
-    /* visual fix to help align logo */
-    padding-top: 6px;
-    width: 256px;
-    height: 35px;
-  }
-
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     header {
