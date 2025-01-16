@@ -40,3 +40,18 @@ def contact(request):
 
 def blog(request):
     return render(request, 'kitsch/blog.html', {'blog' : blog})
+
+def anita(request):
+    return render(request, 'blogs/anita.html', {'anita' : anita})
+
+def deena(request):
+    return render(request, 'blogs/deena.html', {'deena' : deena})
+
+def denise(request):
+    return render(request, 'blogs/denise.html', {'denise' : denise})
+
+def sandra(request):
+    return render(request, 'blogs/sandra.html', {'sandra' : sandra})
+
+def robin(request):
+    return render(request, 'blogs/robin.html', {'robin' : robin})
