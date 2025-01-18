@@ -193,8 +193,11 @@ nav li {
   margin-left: 20px;
 }
 
-
 .page-content {
+  font-size: var(--font-reg);
+}
+
+.blog-content {
   display: grid;
   grid-template-columns: repeat(3 1fr);
   grid-template-rows: 175px 1fr;
